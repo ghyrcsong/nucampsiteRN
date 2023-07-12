@@ -10,7 +10,7 @@ const RenderCampsite = (props) => {
                     <View style={{ justifyContent: 'center', flex: 1 }}>
                         <Text
                             style={{
-                                color: 'White',
+                                color: 'white',
                                 textAlign: 'center',
                                 fontSize: 20
                             }}
@@ -35,7 +35,6 @@ const RenderCampsite = (props) => {
             </Card>
         );
     }
-
     return <View />;
 };
 

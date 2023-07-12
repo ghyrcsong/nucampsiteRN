@@ -11,10 +11,10 @@ const FeaturedItem = ({ item }) => {
             <Card containerStyle={{ padding: 0 }}>
                 <Card.Image source={item.image}>
                     <View style={{ justifyContent: 'center', flex: 1 }}>
-                        <Text 
+                        <Text
                             style={{
-                                color: 'white', 
-                                textAlign: 'center', 
+                                color: 'white',
+                                textAlign: 'center',
                                 fontSize: 20
                             }}
                         >
@@ -38,12 +38,11 @@ const HomeScreen = () => {
     const featPromotion = promotions.find((item) => item.featured);
     const featPartner = partners.find((item) => item.featured);
 
-
     return (
         <ScrollView>
             <FeaturedItem item={featCampsite} />
             <FeaturedItem item={featPromotion} />
-            <FeaturedItem item={featPartner} /> 
+            <FeaturedItem item={featPartner} />
         </ScrollView>
     );
 };

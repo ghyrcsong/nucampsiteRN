@@ -15,7 +15,7 @@ const CampsiteInfoScreen = ({ route }) => {
                 <Text style={{ fontSize: 14 }}>{item.text}</Text>
                 <Text style={{ fontSize: 12 }}>{item.rating} Stars</Text>
                 <Text style={{ fontSize: 12 }}>
-                    {`-- ${item.auther}, ${item.date}`}
+                    {`-- ${item.author}, ${item.date}`}
                 </Text>
             </View>
         );
@@ -28,14 +28,14 @@ const CampsiteInfoScreen = ({ route }) => {
             )}
             renderItem={renderCommentItem}
             keyExtractor={(item) => item.id.toString()}
-            contentContainerStyle={{ 
-                marginHorizontal: 20, 
-                paddingVertical: 20 
+            contentContainerStyle={{
+                marginHorizontal: 20,
+                paddingVertical: 20
             }}
             ListHeaderComponent={
                 <>
-                    <RenderCampsite 
-                        campsite={campsite} 
+                    <RenderCampsite
+                        campsite={campsite}
                         isFavorite={favorite}
                         markFavorite={() => setFavorite(true)}
                     />
