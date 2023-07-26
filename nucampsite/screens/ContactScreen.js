@@ -1,4 +1,4 @@
-import { ScrollView, Text } from "react-native";
+import { ScrollView, Text } from 'react-native';
 import { Card, Button, Icon } from 'react-native-elements';
 import * as Animatable from 'react-native-animatable';
 import * as MailComposer from 'expo-mail-composer';
@@ -45,6 +45,5 @@ const ContactScreen = () => {
         </ScrollView>
     );
 };
-
 
 export default ContactScreen;
